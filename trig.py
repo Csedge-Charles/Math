@@ -1,4 +1,5 @@
 degree_list = [0, 30, 45, 60, 90, 120, 135, 150, 180, 210, 225, 240, 270, 300, 315, 330]
+radians_list = [0, 2, 3, 4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 22]
 sin_list = ['0', '1/2', '√2/2', '√3/2', '1', '√3/2', '√2/2', '1/2', '0', '-1/2', '-√2/2', '-√3/2', '-1', '-√3/2', '-√2/2', '-1/2']
 cos_list = ['1', '√3/2', '√2/2', '1/2', '0', '-1/2', '-√2/2', '-√3/2', '-1', '-√3/2', '-√2/2', '-1/2', '0', '1/2', '√2/2', '-√3/2']
 tan_list = ['0', '√3/3', '1', '√3', 'undefined', '-√3', '-1', '-√3/3', '0', '√3/3', '1', '√3', 'undefined', '-√3', '-1', '-√3/3']
@@ -73,45 +74,45 @@ class radians:
 
     def sin(x): 
         x = MyMath.convert(x) #Convert fractions into whole numbers using common multipliers with the convert function
-        for i in range(len(degree_list)): #For loop to check if the radian corresponds to the sin list
-            if degree_list[i] == x:
+        for i in range(len(radians_list)): #For loop to check if the radian corresponds to the sin list
+            if radians_list[i] == x:
                 break #Once found, exit loop
         return sin_list[i] #Return response. If response is invalid, it will return none.
     
 
     def cos(x):
         x = MyMath.convert(x) #Convert fractions into whole numbers using common multipliers with the convert function
-        for i in range(len(degree_list)): #For loop to check if the radian corresponds to the cos list
-            if degree_list[i] == x:
+        for i in range(len(radians_list)): #For loop to check if the radian corresponds to the cos list
+            if radians_list[i] == x:
                 break #Once found, exit loop
         return cos_list[i] #Return response. If response is invalid, it will return none.
     
 
     def tan(x):
         x = MyMath.convert(x) #Convert fractions into whole numbers using common multipliers with the convert function
-        for i in range(len(degree_list)): #For loop to check if the radian corresponds to the tan list
-            if degree_list[i] == x:
+        for i in range(len(radians_list)): #For loop to check if the radian corresponds to the tan list
+            if radians_list[i] == x:
                 break #Once found, exit loop
         return tan_list[i] #Return response. If response is invalid, it will return none.
     
     def csc(x):
         x = MyMath.convert(x) #Convert fractions into whole numbers using common multipliers with the convert function
-        for i in range(len(degree_list)): #For loop to check if the radian corresponds to the csc list
-            if degree_list[i] == x:
+        for i in range(len(radians_list)): #For loop to check if the radian corresponds to the csc list
+            if radians_list[i] == x:
                 break #Once found, exit loop
         return csc_list[i] #Return response. If response is invalid, it will return none.
 
     def sec(x):
         x = MyMath.convert(x) #Convert fractions into whole numbers using common multipliers with the convert function
-        for i in range(len(degree_list)): #For loop to check if the radian corresponds to the sec list
-            if degree_list[i] == x:
+        for i in range(len(radians_list)): #For loop to check if the radian corresponds to the sec list
+            if radians_list[i] == x:
                 break #Once found, exit loop
         return sec_list[i] #Return response. If response is invalid, it will return none.
     
     def cot(x):
         x = MyMath.convert(x) #Convert fractions into whole numbers using common multipliers with the convert function
-        for i in range(len(degree_list)): #For loop to check if the radian corresponds to the cot list
-            if degree_list[i] == x:
+        for i in range(len(radians_list)): #For loop to check if the radian corresponds to the cot list
+            if radians_list[i] == x:
                 break #Once found, exit loop
         return cot_list[i] #Return response. If response is invalid, it will return none.
 
